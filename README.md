@@ -7,9 +7,28 @@
 ![Swing](https://github.com/aliftech/swing/blob/master/src/assets/screen_shoot/Screenshot_1.png)
 ![Swing](https://github.com/aliftech/swing/blob/master/src/assets/screen_shoot/Screenshot_dark_mode.png)
 
-Are you tired of using generic and bland admin templates for your web projects? Introducing Swing, the modern and sleek admin template built with Vue.js.
+## What iSwing Dashboard Template
 
-Swing offers a smooth and responsive user experience with a clean and minimalist design. It's perfect for businesses, finance, and other professional applications.
+Swing is a powerful and versatile dashboard template that can be used to visualize data from a variety of sources. It features a modern design, a wide range of widgets, and a flexible layout that can be customized to meet your specific needs.
+
+With Swing, you can easily create dashboards that are informative, engaging, and easy to use. Whether you're tracking sales, monitoring website traffic, or managing your finances, Swing can help you visualize your data in a way that makes sense.
+
+**Features:**
+
+- Modern design
+- Wide range of widgets
+- Flexible layout
+- Easy to use
+- Responsive design
+- Documentation and support
+
+**Benefits:**
+
+- Save time and effort
+- Improve productivity
+- Make better decisions
+- Gain insights from your data
+- Communicate your data effectively
 
 ## Key Features
 
@@ -71,6 +90,12 @@ Now you can run the project using this command
 
 ```
 npm run dev
+```
+
+**Build**
+
+```
+npm run build
 ```
 
 ## Version
