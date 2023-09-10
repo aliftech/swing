@@ -16,7 +16,7 @@
     "glob-parent": ">=5.1.2",
     "husky": "^8.0.3",
     "roboto-fontface": "*",
-    "swiper": "^9.3.2",
+    "swiper": "^10.2.0",
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1",
     "vue": "^3.2.13",

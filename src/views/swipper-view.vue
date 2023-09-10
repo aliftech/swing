@@ -10,6 +10,9 @@
         <v-col lg="6" sm="12">
           <defaultComponentVue></defaultComponentVue>
         </v-col>
+        <v-col lg="6" sm="12">
+          <navigationComponentVue></navigationComponentVue>
+        </v-col>
       </v-row>
       <v-row>
         <myFooter></myFooter>
@@ -22,11 +25,13 @@
 import titlebarComponent from "@/components/titlebar/titlebar-component.vue";
 import myFooter from "@/components/footer/footer-component.vue";
 import defaultComponentVue from "@/components/swipper/default-component.vue";
+import navigationComponentVue from "@/components/swipper/navigation-component.vue";
 export default {
   components: {
     titlebarComponent,
     myFooter,
     defaultComponentVue,
+    navigationComponentVue,
   },
   data: () => ({
     title: "Swipper Slide",
