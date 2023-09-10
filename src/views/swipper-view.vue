@@ -7,7 +7,7 @@
         class="mb"
       ></titlebarComponent>
       <v-row>
-        <v-col lg="12" sm="12">
+        <v-col lg="6" sm="12">
           <defaultComponentVue></defaultComponentVue>
         </v-col>
       </v-row>
