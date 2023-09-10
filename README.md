@@ -72,3 +72,7 @@ Now you can run the project using this command
 ```
 npm run dev
 ```
+
+## Version
+
+- 10 September 2023 :: V.0.0.4 (Current version)
