@@ -55,4 +55,19 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+</style>

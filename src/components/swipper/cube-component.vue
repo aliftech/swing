@@ -57,4 +57,23 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.swiper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+</style>
