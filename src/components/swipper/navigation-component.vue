@@ -3,14 +3,18 @@
     <v-card-title>Navigation Component</v-card-title>
     <v-container>
       <swiper :navigation="true" :modules="modules" class="mySwiper">
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide
-        ><swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide
-        ><swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide
-        ><swiper-slide>Slide 7</swiper-slide>
-        <swiper-slide>Slide 8</swiper-slide><swiper-slide>Slide 9</swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </swiper-slide>
       </swiper>
     </v-container>
   </v-card>

@@ -6,20 +6,18 @@
         :routes="routes"
         class="mb"
       ></titlebarComponent>
-      <v-row>
-        <v-col lg="6" sm="12">
+      <v-row class="d-flex justify-center">
+        <v-col lg="8" sm="12">
           <defaultComponentVue></defaultComponentVue>
         </v-col>
-        <v-col lg="6" sm="12">
+        <v-col lg="8" sm="12">
           <navigationComponentVue></navigationComponentVue>
         </v-col>
-      </v-row>
-      <v-row>
-        <v-col lg="6" sm="12">
+        <v-col lg="8" sm="12">
           <paginationComponentVue></paginationComponentVue>
         </v-col>
-        <v-col lg="6" sm="12">
-          <verticalComponentVue></verticalComponentVue>
+        <v-col lg="8" sm="12">
+          <slideComponentVue></slideComponentVue>
         </v-col>
       </v-row>
       <v-row>
@@ -35,7 +33,8 @@ import myFooter from "@/components/footer/footer-component.vue";
 import defaultComponentVue from "@/components/swipper/default-component.vue";
 import navigationComponentVue from "@/components/swipper/navigation-component.vue";
 import paginationComponentVue from "@/components/swipper/pagination-component.vue";
-import verticalComponentVue from "@/components/swipper/vertical-component.vue";
+import slideComponentVue from "@/components/swipper/slide-component.vue";
+
 export default {
   components: {
     titlebarComponent,
@@ -43,7 +42,7 @@ export default {
     defaultComponentVue,
     navigationComponentVue,
     paginationComponentVue,
-    verticalComponentVue,
+    slideComponentVue,
   },
   data: () => ({
     title: "Swipper Slide",
