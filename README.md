@@ -75,4 +75,19 @@ npm run dev
 
 ## Version
 
-- 10 September 2023 :: V.0.0.4 (Current version)
+- 10 September 2023 :: V.0.0.4
+- 10 Septermber 2023 :: V.0.1.0 (Current version)
+
+## What's New
+
+### Version 0.1.0
+
+- Update swipper component
+- Add navigation component
+- Add card effect component
+- Add coverflow effect component
+- Add cube effect component
+- Add fade effect component
+- Add flip effect component
+- Add pagination component
+- Add slide component
