@@ -28,6 +28,9 @@
         <v-col lg="8" sm="12">
           <cardComponentVue></cardComponentVue>
         </v-col>
+        <v-col lg="8" sm="12">
+          <flipComponentVue></flipComponentVue>
+        </v-col>
       </v-row>
       <v-row>
         <myFooter></myFooter>
@@ -46,6 +49,7 @@ import slideComponentVue from "@/components/swipper/slide-component.vue";
 import fadeComponentVue from "@/components/swipper/fade-component.vue";
 import cubeComponentVue from "@/components/swipper/cube-component.vue";
 import cardComponentVue from "@/components/swipper/card-component.vue";
+import flipComponentVue from "@/components/swipper/flip-component.vue";
 
 export default {
   components: {
@@ -58,6 +62,7 @@ export default {
     fadeComponentVue,
     cubeComponentVue,
     cardComponentVue,
+    flipComponentVue,
   },
   data: () => ({
     title: "Swipper Slide",
