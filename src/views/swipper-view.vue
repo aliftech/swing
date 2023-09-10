@@ -18,6 +18,9 @@
         <v-col lg="6" sm="12">
           <paginationComponentVue></paginationComponentVue>
         </v-col>
+        <v-col lg="6" sm="12">
+          <verticalComponentVue></verticalComponentVue>
+        </v-col>
       </v-row>
       <v-row>
         <myFooter></myFooter>
@@ -32,6 +35,7 @@ import myFooter from "@/components/footer/footer-component.vue";
 import defaultComponentVue from "@/components/swipper/default-component.vue";
 import navigationComponentVue from "@/components/swipper/navigation-component.vue";
 import paginationComponentVue from "@/components/swipper/pagination-component.vue";
+import verticalComponentVue from "@/components/swipper/vertical-component.vue";
 export default {
   components: {
     titlebarComponent,
@@ -39,6 +43,7 @@ export default {
     defaultComponentVue,
     navigationComponentVue,
     paginationComponentVue,
+    verticalComponentVue,
   },
   data: () => ({
     title: "Swipper Slide",
