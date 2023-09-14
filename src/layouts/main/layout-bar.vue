@@ -1,44 +1,37 @@
 <template>
-    <v-app :theme="theme">
-        <layoutAppVue v-on:tema="tema"></layoutAppVue>
-        <layoutViewVue></layoutViewVue>
-    </v-app>
+  <v-app :theme="theme">
+    <layoutAppVue v-on:tema="tema"></layoutAppVue>
+    <layoutViewVue></layoutViewVue>
+  </v-app>
 </template>
 
 <script>
-    import layoutAppVue from './layout-app.vue';
-    import layoutViewVue from './layout-view.vue';
-    export default {
-        components: {
-            layoutAppVue,
-            layoutViewVue
-        },
-        data() {
-            return {
-                theme: 'light',
-                is_dark: false
-            }
-        },
-        mounted() {
-            this.getTheme()
-        },  
-        methods: {
-            tema() {
-                this.is_dark = this.is_dark ? false : true;
-                if(this.is_dark === true) {
-                    this.theme = 'dark';
-                    this.themeStorage();
-                } else {
-                    this.theme = 'light';
-                    this.themeStorage();
-                }
-            },
-            themeStorage() {
-                localStorage.setItem('theme', this.theme);
-            },
-            getTheme() {
-                this.theme = localStorage.getItem('theme');
-            }
-        }
-    }
+import layoutAppVue from "./layout-app.vue";
+import layoutViewVue from "./layout-view.vue";
+import { themeSwitcher } from "@/store/theme";
+
+export default {
+  components: {
+    layoutAppVue,
+    layoutViewVue,
+  },
+  data() {
+    return {
+      theme: null,
+      store: themeSwitcher(),
+    };
+  },
+  mounted() {
+    this.getTheme();
+  },
+  methods: {
+    tema() {
+      this.store.change();
+      this.getTheme();
+    },
+    getTheme() {
+      this.theme = this.store.theme;
+    },
+  },
+};
 </script>

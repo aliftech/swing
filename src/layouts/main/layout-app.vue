@@ -116,6 +116,7 @@
 </template>
 
 <script>
+import { themeSwitcher } from "@/store/theme";
 export default {
   data() {
     return {
@@ -297,8 +298,8 @@ export default {
           url: "/swipper",
         },
       ],
-      icon: "",
-      is_night: null,
+      icon: null,
+      store: themeSwitcher(),
     };
   },
   mounted() {
@@ -307,13 +308,8 @@ export default {
   methods: {
     onClick() {
       this.$emit("tema");
-      this.is_night = !this.is_night;
-      if (this.is_night === true) {
-        this.icon = "mdi mdi-weather-night";
-      } else {
-        this.icon = "mdi mdi-weather-sunny";
-      }
-      localStorage.setItem("icon", this.icon);
+      this.store.changeIcon();
+      this.getIcon();
     },
 
     toProfile() {
@@ -321,13 +317,7 @@ export default {
     },
 
     getIcon() {
-      if (localStorage.getItem("theme") === "dark") {
-        this.is_night = true;
-        this.icon = "mdi mdi-weather-sunny";
-      } else {
-        this.is_night = false;
-        this.icon = "mdi mdi-weather-night";
-      }
+      this.icon = this.store.icon;
     },
   },
 };
